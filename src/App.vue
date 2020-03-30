@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <v-app class="body">
+        <v-content>
+            <WorldHO/>
+            <Info/>
+            <Statistics/>
+        </v-content>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import Info from './components/info/info';
+    import WorldHO from './components/info/worldHO.vue'
+    import Statistics from './components/statistics/statistics.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+
+        components: {
+            Info,
+            WorldHO,
+            Statistics
+        },
+
+        data: () => ({
+            //
+        }),
+    };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    section {
+        padding: 3rem;
+    }
+
+    body, html {
+        font-family: Montserrat, sans-serif;
+    }
+
+    .body {
+        background: #f5f5f5 !important;
+
+    }
+
 </style>
