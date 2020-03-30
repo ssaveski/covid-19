@@ -1,5 +1,5 @@
 <template>
-    <v-col class="mb-30" sm="12" md="4" lg="4" xl="6">
+    <v-col class="mb-30" sm="12" md="4" lg="4" xl="3">
         <div class="box-card box-shadow"><h3>{{value | formatNumber}}</h3> <span class="capitalize">{{label}}</span>
         </div>
 
